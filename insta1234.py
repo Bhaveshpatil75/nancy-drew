@@ -1,14 +1,14 @@
 import instaloader
+import private
 def function(PROFILE):
 	a=instaloader.Instaloader()
-	USER='nancy_drew_bot'
-#	PASSWORD='basilisk'
-	# try:
-	# 	a.login(USER,PASSWORD)
+	
+	try:
+		a.login(private.USER,private.PASSWORD)
 #	a.load_session_from_file(USER)
-	a.interactive_login(USER)
-	# except:
-	# 	return '''There is a problem with instagram servers.please try again later or contact admin-@bhaveshpatil_75'''
+#	a.interactive_login(private.USER)
+	except:
+		return '''There is a problem with instagram servers.please try again later or contact admin-@bhaveshpatil_75'''
 	try:
 		profile=instaloader.Profile.from_username(a.context,PROFILE)
 		wers=profile.get_followers()

@@ -22,6 +22,6 @@ def delete():
 			os.remove(i)
 	except:
 		return ''
-x=input('Enter ID : ')
-download(x)
-#delete()
+# x=input('Enter ID : ')
+# download(x)
+# delete()

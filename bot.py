@@ -3,8 +3,9 @@ from insta1234 import function
 from profilepic import download,delete
 from lovebot import love
 from qrcodemaker import make,dele
-token='5610171506:AAFRJKBY_uM1T15b46I1NDgIT16kO3mcxps'
-bot=telebot.TeleBot(token)
+import private
+
+bot=telebot.TeleBot(private.token)
 
 @bot.message_handler(['start'])
 def start(message):
