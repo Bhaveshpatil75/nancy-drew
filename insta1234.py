@@ -34,4 +34,4 @@ def function(PROFILE):
 	except:
 		return '''Invalid Instagram ID.
 		if the ID is valid please contact admin-@bhaveshpatil_75'''
-print(function('bhaveshpatil_75'))
+# print(function('bhaveshpatil_75'))
